@@ -50,14 +50,14 @@ button:focus-visible, select:focus-visible { outline: 2px solid #0a84ff; outline
   gap: 28px;
   max-width: 1040px;
   margin: 0 auto;
-  align-items: start;
+  align-items: stretch;
 }
 .practice-editor-wrap {
   width: 100%;
 }
 
 .problem-panel {
-  align-self: start;
+  align-self: stretch;
   width: 100%;
   padding: 28px 24px;
   border: 1px solid #1d1d20;
@@ -186,3 +186,48 @@ button:focus-visible, select:focus-visible { outline: 2px solid #0a84ff; outline
   .timer { margin-left: 0; }
   .duel-head { grid-template-columns: 1fr; }
 }
+
+/* ---------- Auth ---------- */
+.splash { display: grid; min-height: 100vh; place-items: center; }
+.splash .logo-dot { width: 34px; height: 34px; }
+.auth-wrap { display: grid; min-height: 100vh; place-items: center; padding: 24px; }
+.auth-card {
+  width: 100%;
+  max-width: 400px;
+  padding: 32px 28px;
+  border: 1px solid #1d1d20;
+  border-radius: 22px;
+  background: #0b0b0c;
+}
+.auth-card h1 { margin: 18px 0 6px; font-size: 24px; letter-spacing: -.02em; }
+.auth-card code { font-family: "Fira Code", monospace; font-size: 12.5px; color: #7cc0ff; }
+.auth-sub { margin: 0 0 24px; color: #8b8b92; font-size: 14px; line-height: 1.6; }
+.auth-form { display: grid; gap: 16px; }
+.auth-form label { display: grid; gap: 6px; color: #8b8b92; font-size: 13px; }
+.field {
+  width: 100%;
+  padding: 11px 13px;
+  border: 1px solid #1d1d20;
+  border-radius: 10px;
+  background: #17181d;
+  color: #ededed;
+  font: inherit;
+  outline: none;
+}
+.field:focus { border-color: #0a84ff; }
+.auth-submit { width: 100%; padding: 11px 14px; }
+.auth-switch { margin-top: 18px; }
+.auth-msg { padding: 10px 12px; border-radius: 10px; font-size: 13.5px; line-height: 1.5; }
+.auth-msg.error { background: #2a1214; color: #ff8a8f; }
+.auth-msg.info { background: #0f1824; color: #7cc0ff; }
+.editor-button:disabled { opacity: .55; cursor: not-allowed; }
+
+/* ---------- Misc ---------- */
+.empty { padding: 28px 0; text-align: center; color: #8b8b92; font-size: 14px; }
+.chip-button { padding: 0; border: 0; background: none; }
+.chip-button:hover { color: #ededed; }
+.chip-button.hot:hover { color: #0a84ff; }
+.duel-result { margin-top: 4px; font-size: 13px; font-weight: 600; }
+.duel-result.win { color: #4da3ff; }
+.duel-result.lose { color: #8b8b92; }
+.hero .chips { align-items: center; }

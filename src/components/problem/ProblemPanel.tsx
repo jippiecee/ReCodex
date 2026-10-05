@@ -1,15 +1,18 @@
 import type { Problem } from "../../types/problem";
+import { formatTime } from "../../hooks/useTimer";
 
 export function ProblemPanel({
   problem,
   best,
+  avgSeconds,
   onHint,
   hintOpen,
 }: {
   problem: Problem;
-  best: string;
-  onHint: () => void;
-  hintOpen: boolean;
+  best: number | null;
+  avgSeconds: number | null;
+  onHint?: () => void;
+  hintOpen?: boolean;
 }) {
   return (
     <aside className="problem-panel">
@@ -47,19 +50,21 @@ export function ProblemPanel({
         ))}
       </ul>
 
-      {!hintOpen ? (
-        <button className="hint-button" onClick={onHint}>
-          Buka petunjuk, tambah 15 detik
-        </button>
-      ) : (
-        <p className="mt-3 text-sm leading-6 text-muted">
-          Pecah teks jadi array huruf, balik urutannya, lalu gabungkan lagi.
-        </p>
-      )}
+      {onHint &&
+        (!hintOpen ? (
+          <button className="hint-button" onClick={onHint}>
+            Buka petunjuk, tambah 15 detik
+          </button>
+        ) : (
+          <p className="mt-3 text-sm leading-6 text-muted">{problem.hint}</p>
+        ))}
 
       <div className="mt-8 text-[13px] text-muted">
-        Best kamu <b className="font-medium text-text">{best}</b>. Rata-rata
-        pemain 02:10.
+        Best kamu{" "}
+        <b className="font-medium text-text">{best != null ? formatTime(best) : "-"}</b>.{" "}
+        {avgSeconds != null
+          ? `Rata-rata pemain ${formatTime(avgSeconds)}.`
+          : "Belum ada rata-rata pemain."}
       </div>
     </aside>
   );
