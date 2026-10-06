@@ -24,6 +24,11 @@ export type Duel = {
   finished_at: string | null;
   winner: string | null;
   winner_seconds: number | null;
+  p1_score: number;
+  p2_score: number;
+  round: number;
+  win_points: number;
+  round_started_at: string | null;
 };
 
 export type DuelEvent = {
@@ -32,4 +37,5 @@ export type DuelEvent = {
   user_id: string;
   passed: number;
   total: number;
+  round: number;
 };

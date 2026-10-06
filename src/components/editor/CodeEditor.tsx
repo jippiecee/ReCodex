@@ -11,7 +11,7 @@ export function CodeEditor({
   onChange: (value: string) => void;
 }) {
   return (
-    <div className="overflow-hidden rounded-2xl border border-line bg-[#17181d]">
+    <div data-allow-contextmenu className="overflow-hidden rounded-2xl border border-line bg-[#17181d]">
       <Editor
         height="390px"
         theme="vs-dark"

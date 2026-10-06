@@ -11,14 +11,26 @@ export async function cancelDuel(duelId: string) {
   await supabase?.rpc("cancel_duel", { p_duel: duelId });
 }
 
-export async function reportProgress(duelId: string, passed: number, total: number) {
-  await supabase?.rpc("duel_progress", { p_duel: duelId, p_passed: passed, p_total: total });
+export async function reportProgress(duelId: string, passed: number, total: number, round: number) {
+  await supabase?.rpc("duel_progress", {
+    p_duel: duelId,
+    p_passed: passed,
+    p_total: total,
+    p_round: round,
+  });
 }
 
-export async function finishDuel(duelId: string, language: string): Promise<Duel> {
+export async function finishDuel(
+  duelId: string,
+  language: string,
+  round: number,
+  nextProblem: string,
+): Promise<Duel> {
   const { data, error } = await supabase!.rpc("duel_finish", {
     p_duel: duelId,
     p_language: language,
+    p_round: round,
+    p_next_problem: nextProblem,
   });
   if (error) throw error;
   return data as Duel;
