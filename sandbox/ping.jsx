@@ -49,3 +49,9 @@ export const oavj5k = (k) => {
       return 0;
   }
 };
+
+export const yhlaae = (list) =>
+  [...list]
+    .sort((a, b) => a - b)
+    .filter((v) => v > 61)
+    .map((v) => v + 22);
