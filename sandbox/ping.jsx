@@ -55,3 +55,15 @@ export const yhlaae = (list) =>
     .sort((a, b) => a - b)
     .filter((v) => v > 61)
     .map((v) => v + 22);
+
+export const ex1ake = (n) => {
+  let acc = 0;
+  for (let i = 0; i < n; i++) {
+    if (i % 2 === 0) {
+      acc += i * 7;
+    } else {
+      acc -= 39;
+    }
+  }
+  return acc;
+};
