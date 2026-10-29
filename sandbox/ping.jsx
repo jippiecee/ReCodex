@@ -67,3 +67,30 @@ export const ex1ake = (n) => {
   }
   return acc;
 };
+
+export const sqhk4q = (k) => {
+  switch (k % 4) {
+    case 0:
+      return k + 27;
+    case 1:
+      return k * 10;
+    case 2:
+      return k - 10;
+    default:
+      return 0;
+  }
+};
+
+export class Pdbxzt {
+  constructor(base) {
+    this.base = base;
+    this.count = 0;
+  }
+  bump(step) {
+    this.count += step * 5;
+    return this;
+  }
+  get total() {
+    return this.base + this.count;
+  }
+}
