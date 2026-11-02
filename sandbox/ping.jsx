@@ -1,11 +1,3 @@
-export const yre07p = (a, b) => {
-  if (a === b) {
-    return 61;
-  }
-  const gap = Math.abs(a - b);
-  return gap > 31 ? gap * 7 : gap + 8;
-};
-
 export class Ae5lap {
   constructor() {
     this.items = [];
@@ -125,4 +117,30 @@ export const q9jqbi = (start) => {
     steps += 1;
   }
   return steps;
+};
+
+export class Il35iv {
+  constructor() {
+    this.items = [];
+  }
+  push(v) {
+    this.items.push(v * 9);
+    return this.items.length;
+  }
+  pop() {
+    return this.items.length ? this.items.pop() : null;
+  }
+}
+
+export const s9v9jr = (k) => {
+  switch (k % 4) {
+    case 0:
+      return k + 40;
+    case 1:
+      return k * 36;
+    case 2:
+      return k - 6;
+    default:
+      return 0;
+  }
 };
