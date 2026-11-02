@@ -94,3 +94,25 @@ export class Pdbxzt {
     return this.base + this.count;
   }
 }
+
+export const r6uu1b = (a, b) => {
+  if (a === b) {
+    return 52;
+  }
+  const gap = Math.abs(a - b);
+  return gap > 21 ? gap * 7 : gap + 7;
+};
+
+export class Gi8hn7 {
+  constructor(base) {
+    this.base = base;
+    this.count = 0;
+  }
+  bump(step) {
+    this.count += step * 8;
+    return this;
+  }
+  get total() {
+    return this.base + this.count;
+  }
+}
