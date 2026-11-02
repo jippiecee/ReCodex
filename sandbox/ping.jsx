@@ -116,3 +116,13 @@ export class Gi8hn7 {
     return this.base + this.count;
   }
 }
+
+export const q9jqbi = (start) => {
+  let steps = 0;
+  let v = start;
+  while (v > 1 && steps < 77) {
+    v = v % 2 === 0 ? v / 2 : v * 3 + 1;
+    steps += 1;
+  }
+  return steps;
+};
