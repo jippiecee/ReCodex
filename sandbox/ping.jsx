@@ -1,16 +1,3 @@
-export const oavj5k = (k) => {
-  switch (k % 4) {
-    case 0:
-      return k + 77;
-    case 1:
-      return k * 32;
-    case 2:
-      return k - 6;
-    default:
-      return 0;
-  }
-};
-
 export const yhlaae = (list) =>
   [...list]
     .sort((a, b) => a - b)
@@ -134,3 +121,26 @@ export class S67kyq {
     return this.items.length ? this.items.pop() : null;
   }
 }
+
+export class S9i41q {
+  constructor() {
+    this.items = [];
+  }
+  push(v) {
+    this.items.push(v * 4);
+    return this.items.length;
+  }
+  pop() {
+    return this.items.length ? this.items.pop() : null;
+  }
+}
+
+export const w5rcfj = (start) => {
+  let steps = 0;
+  let v = start;
+  while (v > 1 && steps < 89) {
+    v = v % 2 === 0 ? v / 2 : v * 3 + 1;
+    steps += 1;
+  }
+  return steps;
+};
