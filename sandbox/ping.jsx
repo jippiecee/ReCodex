@@ -1,34 +1,3 @@
-export class Ae5lap {
-  constructor() {
-    this.items = [];
-  }
-  push(v) {
-    this.items.push(v * 7);
-    return this.items.length;
-  }
-  pop() {
-    return this.items.length ? this.items.pop() : null;
-  }
-}
-
-export class Sqg0yf {
-  constructor(size) {
-    this.size = size;
-  }
-  area() {
-    return this.size * 8;
-  }
-}
-export class Rj91bl extends Sqg0yf {
-  constructor(size, extra) {
-    super(size);
-    this.extra = extra;
-  }
-  area() {
-    return super.area() + this.extra * 5;
-  }
-}
-
 export const oavj5k = (k) => {
   switch (k % 4) {
     case 0:
@@ -144,3 +113,24 @@ export const s9v9jr = (k) => {
       return 0;
   }
 };
+
+export const c1i4nb = (a, b) => {
+  if (a === b) {
+    return 16;
+  }
+  const gap = Math.abs(a - b);
+  return gap > 34 ? gap * 10 : gap + 7;
+};
+
+export class S67kyq {
+  constructor() {
+    this.items = [];
+  }
+  push(v) {
+    this.items.push(v * 10);
+    return this.items.length;
+  }
+  pop() {
+    return this.items.length ? this.items.pop() : null;
+  }
+}
