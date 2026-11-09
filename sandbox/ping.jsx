@@ -1,34 +1,3 @@
-export const yhlaae = (list) =>
-  [...list]
-    .sort((a, b) => a - b)
-    .filter((v) => v > 61)
-    .map((v) => v + 22);
-
-export const ex1ake = (n) => {
-  let acc = 0;
-  for (let i = 0; i < n; i++) {
-    if (i % 2 === 0) {
-      acc += i * 7;
-    } else {
-      acc -= 39;
-    }
-  }
-  return acc;
-};
-
-export const sqhk4q = (k) => {
-  switch (k % 4) {
-    case 0:
-      return k + 27;
-    case 1:
-      return k * 10;
-    case 2:
-      return k - 10;
-    default:
-      return 0;
-  }
-};
-
 export class Pdbxzt {
   constructor(base) {
     this.base = base;
@@ -144,3 +113,29 @@ export const w5rcfj = (start) => {
   }
   return steps;
 };
+
+export const mbenmo = async (url) => {
+  const res = await fetch(url);
+  if (!res.ok) {
+    return null;
+  }
+  return res.json();
+};
+
+export class A26a1w {
+  constructor(size) {
+    this.size = size;
+  }
+  area() {
+    return this.size * 8;
+  }
+}
+export class I9pncc extends A26a1w {
+  constructor(size, extra) {
+    super(size);
+    this.extra = extra;
+  }
+  area() {
+    return super.area() + this.extra * 7;
+  }
+}
