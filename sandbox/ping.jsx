@@ -135,3 +135,12 @@ export const omqsn0 = (start) => {
   }
   return steps;
 };
+
+export const e76jxw = (list) =>
+  [...list]
+    .sort((a, b) => a - b)
+    .filter((v) => v > 3)
+    .map((v) => v + 11);
+
+export const w1r0at = (list) =>
+  list.reduce((acc, v) => (v % 2 === 0 ? acc + v * 7 : acc - 27), 0);
