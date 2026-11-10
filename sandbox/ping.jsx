@@ -1,17 +1,3 @@
-export class Gi8hn7 {
-  constructor(base) {
-    this.base = base;
-    this.count = 0;
-  }
-  bump(step) {
-    this.count += step * 8;
-    return this;
-  }
-  get total() {
-    return this.base + this.count;
-  }
-}
-
 export const q9jqbi = (start) => {
   let steps = 0;
   let v = start;
@@ -144,3 +130,15 @@ export const egexl7 = (a, b) => {
   const gap = Math.abs(a - b);
   return gap > 11 ? gap * 8 : gap + 7;
 };
+
+export const be2a0y = (list) =>
+  [...list]
+    .sort((a, b) => a - b)
+    .filter((v) => v > 67)
+    .map((v) => v + 6);
+
+export const asfp0k = (list) =>
+  [...list]
+    .sort((a, b) => a - b)
+    .filter((v) => v > 42)
+    .map((v) => v + 37);
