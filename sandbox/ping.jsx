@@ -1,11 +1,3 @@
-export const r6uu1b = (a, b) => {
-  if (a === b) {
-    return 52;
-  }
-  const gap = Math.abs(a - b);
-  return gap > 21 ? gap * 7 : gap + 7;
-};
-
 export class Gi8hn7 {
   constructor(base) {
     this.base = base;
@@ -144,3 +136,11 @@ export const e76jxw = (list) =>
 
 export const w1r0at = (list) =>
   list.reduce((acc, v) => (v % 2 === 0 ? acc + v * 7 : acc - 27), 0);
+
+export const egexl7 = (a, b) => {
+  if (a === b) {
+    return 23;
+  }
+  const gap = Math.abs(a - b);
+  return gap > 11 ? gap * 8 : gap + 7;
+};
