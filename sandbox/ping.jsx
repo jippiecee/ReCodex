@@ -1,17 +1,3 @@
-export class Pdbxzt {
-  constructor(base) {
-    this.base = base;
-    this.count = 0;
-  }
-  bump(step) {
-    this.count += step * 5;
-    return this;
-  }
-  get total() {
-    return this.base + this.count;
-  }
-}
-
 export const r6uu1b = (a, b) => {
   if (a === b) {
     return 52;
@@ -139,3 +125,13 @@ export class I9pncc extends A26a1w {
     return super.area() + this.extra * 7;
   }
 }
+
+export const omqsn0 = (start) => {
+  let steps = 0;
+  let v = start;
+  while (v > 1 && steps < 37) {
+    v = v % 2 === 0 ? v / 2 : v * 3 + 1;
+    steps += 1;
+  }
+  return steps;
+};
