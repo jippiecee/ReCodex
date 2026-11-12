@@ -1,13 +1,3 @@
-export const q9jqbi = (start) => {
-  let steps = 0;
-  let v = start;
-  while (v > 1 && steps < 77) {
-    v = v % 2 === 0 ? v / 2 : v * 3 + 1;
-    steps += 1;
-  }
-  return steps;
-};
-
 export class Il35iv {
   constructor() {
     this.items = [];
@@ -142,3 +132,16 @@ export const asfp0k = (list) =>
     .sort((a, b) => a - b)
     .filter((v) => v > 42)
     .map((v) => v + 37);
+
+export const ju19br = (list) =>
+  list.reduce((acc, v) => (v % 2 === 0 ? acc + v * 10 : acc - 22), 0);
+
+export const gp2xpe = (v) => {
+  if (v > 41) {
+    return v - 29;
+  } else if (v < 8) {
+    return v * 4;
+  } else {
+    return v + 31;
+  }
+};
