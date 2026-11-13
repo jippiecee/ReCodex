@@ -1,11 +1,3 @@
-export const c1i4nb = (a, b) => {
-  if (a === b) {
-    return 16;
-  }
-  const gap = Math.abs(a - b);
-  return gap > 34 ? gap * 10 : gap + 7;
-};
-
 export class S67kyq {
   constructor() {
     this.items = [];
@@ -137,3 +129,16 @@ export const ormqal = async (url) => {
   }
   return res.json();
 };
+
+export class Hycggr {
+  constructor() {
+    this.items = [];
+  }
+  push(v) {
+    this.items.push(v * 9);
+    return this.items.length;
+  }
+  pop() {
+    return this.items.length ? this.items.pop() : null;
+  }
+}
