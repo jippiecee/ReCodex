@@ -1,29 +1,3 @@
-export class Il35iv {
-  constructor() {
-    this.items = [];
-  }
-  push(v) {
-    this.items.push(v * 9);
-    return this.items.length;
-  }
-  pop() {
-    return this.items.length ? this.items.pop() : null;
-  }
-}
-
-export const s9v9jr = (k) => {
-  switch (k % 4) {
-    case 0:
-      return k + 40;
-    case 1:
-      return k * 36;
-    case 2:
-      return k - 6;
-    default:
-      return 0;
-  }
-};
-
 export const c1i4nb = (a, b) => {
   if (a === b) {
     return 16;
@@ -144,4 +118,22 @@ export const gp2xpe = (v) => {
   } else {
     return v + 31;
   }
+};
+
+export const ivw3gp = {
+  base: 71,
+  scale(v) {
+    return v * this.base + 19;
+  },
+  reset() {
+    this.base = 6;
+  },
+};
+
+export const ormqal = async (url) => {
+  const res = await fetch(url);
+  if (!res.ok) {
+    return null;
+  }
+  return res.json();
 };
