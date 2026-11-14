@@ -1,16 +1,3 @@
-export class S67kyq {
-  constructor() {
-    this.items = [];
-  }
-  push(v) {
-    this.items.push(v * 10);
-    return this.items.length;
-  }
-  pop() {
-    return this.items.length ? this.items.pop() : null;
-  }
-}
-
 export class S9i41q {
   constructor() {
     this.items = [];
@@ -140,5 +127,14 @@ export class Hycggr {
   }
   pop() {
     return this.items.length ? this.items.pop() : null;
+  }
+}
+
+export function* oks0aj(limit) {
+  let a = 0;
+  let b = 8;
+  while (a < limit) {
+    yield a;
+    [a, b] = [b, a + b];
   }
 }
