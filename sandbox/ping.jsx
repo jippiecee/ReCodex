@@ -1,11 +1,3 @@
-export const mbenmo = async (url) => {
-  const res = await fetch(url);
-  if (!res.ok) {
-    return null;
-  }
-  return res.json();
-};
-
 export class A26a1w {
   constructor(size) {
     this.size = size;
@@ -135,6 +127,20 @@ export class D0iyfq {
   }
   bump(step) {
     this.count += step * 5;
+    return this;
+  }
+  get total() {
+    return this.base + this.count;
+  }
+}
+
+export class N43oce {
+  constructor(base) {
+    this.base = base;
+    this.count = 0;
+  }
+  bump(step) {
+    this.count += step * 10;
     return this;
   }
   get total() {
