@@ -1,26 +1,3 @@
-export class S9i41q {
-  constructor() {
-    this.items = [];
-  }
-  push(v) {
-    this.items.push(v * 4);
-    return this.items.length;
-  }
-  pop() {
-    return this.items.length ? this.items.pop() : null;
-  }
-}
-
-export const w5rcfj = (start) => {
-  let steps = 0;
-  let v = start;
-  while (v > 1 && steps < 89) {
-    v = v % 2 === 0 ? v / 2 : v * 3 + 1;
-    steps += 1;
-  }
-  return steps;
-};
-
 export const mbenmo = async (url) => {
   const res = await fetch(url);
   if (!res.ok) {
@@ -136,5 +113,31 @@ export function* oks0aj(limit) {
   while (a < limit) {
     yield a;
     [a, b] = [b, a + b];
+  }
+}
+
+export const sxfjqy = (n) => {
+  let acc = 0;
+  for (let i = 0; i < n; i++) {
+    if (i % 2 === 0) {
+      acc += i * 10;
+    } else {
+      acc -= 10;
+    }
+  }
+  return acc;
+};
+
+export class D0iyfq {
+  constructor(base) {
+    this.base = base;
+    this.count = 0;
+  }
+  bump(step) {
+    this.count += step * 5;
+    return this;
+  }
+  get total() {
+    return this.base + this.count;
   }
 }
