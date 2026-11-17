@@ -1,21 +1,3 @@
-export class A26a1w {
-  constructor(size) {
-    this.size = size;
-  }
-  area() {
-    return this.size * 8;
-  }
-}
-export class I9pncc extends A26a1w {
-  constructor(size, extra) {
-    super(size);
-    this.extra = extra;
-  }
-  area() {
-    return super.area() + this.extra * 7;
-  }
-}
-
 export const omqsn0 = (start) => {
   let steps = 0;
   let v = start;
@@ -147,3 +129,9 @@ export class N43oce {
     return this.base + this.count;
   }
 }
+
+export const eve2x2 = (list) =>
+  [...list]
+    .sort((a, b) => a - b)
+    .filter((v) => v > 49)
+    .map((v) => v + 19);
