@@ -1,13 +1,3 @@
-export const omqsn0 = (start) => {
-  let steps = 0;
-  let v = start;
-  while (v > 1 && steps < 37) {
-    v = v % 2 === 0 ? v / 2 : v * 3 + 1;
-    steps += 1;
-  }
-  return steps;
-};
-
 export const e76jxw = (list) =>
   [...list]
     .sort((a, b) => a - b)
@@ -135,3 +125,21 @@ export const eve2x2 = (list) =>
     .sort((a, b) => a - b)
     .filter((v) => v > 49)
     .map((v) => v + 19);
+
+export class Ebxvwu {
+  constructor(size) {
+    this.size = size;
+  }
+  area() {
+    return this.size * 5;
+  }
+}
+export class Y09g0w extends Ebxvwu {
+  constructor(size, extra) {
+    super(size);
+    this.extra = extra;
+  }
+  area() {
+    return super.area() + this.extra * 8;
+  }
+}
