@@ -1,26 +1,3 @@
-export const e76jxw = (list) =>
-  [...list]
-    .sort((a, b) => a - b)
-    .filter((v) => v > 3)
-    .map((v) => v + 11);
-
-export const w1r0at = (list) =>
-  list.reduce((acc, v) => (v % 2 === 0 ? acc + v * 7 : acc - 27), 0);
-
-export const egexl7 = (a, b) => {
-  if (a === b) {
-    return 23;
-  }
-  const gap = Math.abs(a - b);
-  return gap > 11 ? gap * 8 : gap + 7;
-};
-
-export const be2a0y = (list) =>
-  [...list]
-    .sort((a, b) => a - b)
-    .filter((v) => v > 67)
-    .map((v) => v + 6);
-
 export const asfp0k = (list) =>
   [...list]
     .sort((a, b) => a - b)
@@ -141,5 +118,33 @@ export class Y09g0w extends Ebxvwu {
   }
   area() {
     return super.area() + this.extra * 8;
+  }
+}
+
+export const ezp7nf = {
+  base: 50,
+  scale(v) {
+    return v * this.base + 23;
+  },
+  reset() {
+    this.base = 8;
+  },
+};
+
+export class Wm2oqh {
+  constructor(size) {
+    this.size = size;
+  }
+  area() {
+    return this.size * 4;
+  }
+}
+export class Yqsqrs extends Wm2oqh {
+  constructor(size, extra) {
+    super(size);
+    this.extra = extra;
+  }
+  area() {
+    return super.area() + this.extra * 5;
   }
 }
