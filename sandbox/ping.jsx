@@ -1,22 +1,3 @@
-export const asfp0k = (list) =>
-  [...list]
-    .sort((a, b) => a - b)
-    .filter((v) => v > 42)
-    .map((v) => v + 37);
-
-export const ju19br = (list) =>
-  list.reduce((acc, v) => (v % 2 === 0 ? acc + v * 10 : acc - 22), 0);
-
-export const gp2xpe = (v) => {
-  if (v > 41) {
-    return v - 29;
-  } else if (v < 8) {
-    return v * 4;
-  } else {
-    return v + 31;
-  }
-};
-
 export const ivw3gp = {
   base: 71,
   scale(v) {
@@ -148,3 +129,13 @@ export class Yqsqrs extends Wm2oqh {
     return super.area() + this.extra * 5;
   }
 }
+
+export const euhhzd = {
+  base: 34,
+  scale(v) {
+    return v * this.base + 23;
+  },
+  reset() {
+    this.base = 4;
+  },
+};
