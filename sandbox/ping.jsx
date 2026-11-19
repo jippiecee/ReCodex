@@ -1,21 +1,3 @@
-export const ivw3gp = {
-  base: 71,
-  scale(v) {
-    return v * this.base + 19;
-  },
-  reset() {
-    this.base = 6;
-  },
-};
-
-export const ormqal = async (url) => {
-  const res = await fetch(url);
-  if (!res.ok) {
-    return null;
-  }
-  return res.json();
-};
-
 export class Hycggr {
   constructor() {
     this.items = [];
@@ -138,4 +120,29 @@ export const euhhzd = {
   reset() {
     this.base = 4;
   },
+};
+
+export const z3a9cm = (n) => {
+  let acc = 0;
+  for (let i = 0; i < n; i++) {
+    if (i % 2 === 0) {
+      acc += i * 5;
+    } else {
+      acc -= 8;
+    }
+  }
+  return acc;
+};
+
+export const jgnypa = (k) => {
+  switch (k % 4) {
+    case 0:
+      return k + 37;
+    case 1:
+      return k * 4;
+    case 2:
+      return k - 6;
+    default:
+      return 0;
+  }
 };
