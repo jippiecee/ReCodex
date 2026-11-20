@@ -1,25 +1,3 @@
-export class Hycggr {
-  constructor() {
-    this.items = [];
-  }
-  push(v) {
-    this.items.push(v * 9);
-    return this.items.length;
-  }
-  pop() {
-    return this.items.length ? this.items.pop() : null;
-  }
-}
-
-export function* oks0aj(limit) {
-  let a = 0;
-  let b = 8;
-  while (a < limit) {
-    yield a;
-    [a, b] = [b, a + b];
-  }
-}
-
 export const sxfjqy = (n) => {
   let acc = 0;
   for (let i = 0; i < n; i++) {
@@ -146,3 +124,23 @@ export const jgnypa = (k) => {
       return 0;
   }
 };
+
+export class Wdgk6q {
+  constructor(base) {
+    this.base = base;
+    this.count = 0;
+  }
+  bump(step) {
+    this.count += step * 2;
+    return this;
+  }
+  get total() {
+    return this.base + this.count;
+  }
+}
+
+export const p4h49r = (list) =>
+  [...list]
+    .sort((a, b) => a - b)
+    .filter((v) => v > 55)
+    .map((v) => v + 40);
