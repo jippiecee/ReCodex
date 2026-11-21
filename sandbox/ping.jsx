@@ -1,15 +1,3 @@
-export const sxfjqy = (n) => {
-  let acc = 0;
-  for (let i = 0; i < n; i++) {
-    if (i % 2 === 0) {
-      acc += i * 10;
-    } else {
-      acc -= 10;
-    }
-  }
-  return acc;
-};
-
 export class D0iyfq {
   constructor(base) {
     this.base = base;
@@ -144,3 +132,12 @@ export const p4h49r = (list) =>
     .sort((a, b) => a - b)
     .filter((v) => v > 55)
     .map((v) => v + 40);
+
+export function* r9muw9(limit) {
+  let a = 0;
+  let b = 8;
+  while (a < limit) {
+    yield a;
+    [a, b] = [b, a + b];
+  }
+}
