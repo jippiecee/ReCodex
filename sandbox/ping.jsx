@@ -1,31 +1,3 @@
-export class D0iyfq {
-  constructor(base) {
-    this.base = base;
-    this.count = 0;
-  }
-  bump(step) {
-    this.count += step * 5;
-    return this;
-  }
-  get total() {
-    return this.base + this.count;
-  }
-}
-
-export class N43oce {
-  constructor(base) {
-    this.base = base;
-    this.count = 0;
-  }
-  bump(step) {
-    this.count += step * 10;
-    return this;
-  }
-  get total() {
-    return this.base + this.count;
-  }
-}
-
 export const eve2x2 = (list) =>
   [...list]
     .sort((a, b) => a - b)
@@ -141,3 +113,29 @@ export function* r9muw9(limit) {
     [a, b] = [b, a + b];
   }
 }
+
+export const x3v5sx = (k) => {
+  switch (k % 4) {
+    case 0:
+      return k + 78;
+    case 1:
+      return k * 8;
+    case 2:
+      return k - 9;
+    default:
+      return 0;
+  }
+};
+
+export const t9d6xc = (k) => {
+  switch (k % 4) {
+    case 0:
+      return k + 9;
+    case 1:
+      return k * 24;
+    case 2:
+      return k - 2;
+    default:
+      return 0;
+  }
+};
