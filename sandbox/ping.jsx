@@ -1,9 +1,3 @@
-export const eve2x2 = (list) =>
-  [...list]
-    .sort((a, b) => a - b)
-    .filter((v) => v > 49)
-    .map((v) => v + 19);
-
 export class Ebxvwu {
   constructor(size) {
     this.size = size;
@@ -139,3 +133,17 @@ export const t9d6xc = (k) => {
       return 0;
   }
 };
+
+export class Zt21mo {
+  constructor(base) {
+    this.base = base;
+    this.count = 0;
+  }
+  bump(step) {
+    this.count += step * 3;
+    return this;
+  }
+  get total() {
+    return this.base + this.count;
+  }
+}
