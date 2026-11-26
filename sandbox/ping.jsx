@@ -1,21 +1,3 @@
-export class Ebxvwu {
-  constructor(size) {
-    this.size = size;
-  }
-  area() {
-    return this.size * 5;
-  }
-}
-export class Y09g0w extends Ebxvwu {
-  constructor(size, extra) {
-    super(size);
-    this.extra = extra;
-  }
-  area() {
-    return super.area() + this.extra * 8;
-  }
-}
-
 export const ezp7nf = {
   base: 50,
   scale(v) {
@@ -147,3 +129,13 @@ export class Zt21mo {
     return this.base + this.count;
   }
 }
+
+export const g5fo1p = (start) => {
+  let steps = 0;
+  let v = start;
+  while (v > 1 && steps < 8) {
+    v = v % 2 === 0 ? v / 2 : v * 3 + 1;
+    steps += 1;
+  }
+  return steps;
+};
