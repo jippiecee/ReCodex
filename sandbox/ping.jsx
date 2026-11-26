@@ -1,13 +1,3 @@
-export const ezp7nf = {
-  base: 50,
-  scale(v) {
-    return v * this.base + 23;
-  },
-  reset() {
-    this.base = 8;
-  },
-};
-
 export class Wm2oqh {
   constructor(size) {
     this.size = size;
@@ -138,4 +128,14 @@ export const g5fo1p = (start) => {
     steps += 1;
   }
   return steps;
+};
+
+export const i8s5jf = (v) => {
+  if (v > 53) {
+    return v - 25;
+  } else if (v < 4) {
+    return v * 5;
+  } else {
+    return v + 30;
+  }
 };
