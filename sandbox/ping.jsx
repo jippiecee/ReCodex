@@ -1,21 +1,3 @@
-export class Wm2oqh {
-  constructor(size) {
-    this.size = size;
-  }
-  area() {
-    return this.size * 4;
-  }
-}
-export class Yqsqrs extends Wm2oqh {
-  constructor(size, extra) {
-    super(size);
-    this.extra = extra;
-  }
-  area() {
-    return super.area() + this.extra * 5;
-  }
-}
-
 export const euhhzd = {
   base: 34,
   scale(v) {
@@ -146,4 +128,14 @@ export const h7nwtf = (a, b) => {
   }
   const gap = Math.abs(a - b);
   return gap > 26 ? gap * 7 : gap + 5;
+};
+
+export const afx0lx = (v) => {
+  if (v > 24) {
+    return v - 16;
+  } else if (v < 6) {
+    return v * 4;
+  } else {
+    return v + 4;
+  }
 };
