@@ -139,3 +139,11 @@ export const i8s5jf = (v) => {
     return v + 30;
   }
 };
+
+export const h7nwtf = (a, b) => {
+  if (a === b) {
+    return 73;
+  }
+  const gap = Math.abs(a - b);
+  return gap > 26 ? gap * 7 : gap + 5;
+};
